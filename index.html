@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="Hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Set-Game </title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="style.css">
+        <script src="modules/settings.js"></script>
+    
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Set Game <span id="countdown" style="margin-left: 10px;"></span></h1>
+
+            <div class="row" id="gameSettingsDiv">
+                <section id="gameSettings" class="col-sm-6">
+                    <div class="row">
+                        <h2>Beállítások</h2>
+                    </div>
+
+                    <div class="row" style="margin: 10px 0">
+                        <div class="col-sm-4">
+                            <input type="number" value="1" max="10" min="1" id="playerNumber">
+                        </div>
+
+                        <div class="col-sm-8" id="playerInputs">
+                            <input type="text" name="" id="" value="1. Játékos">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p>Kérlek Válaszd ki a játékmódot:</p>
+
+                        <div class="col-sm-12" id="gameModes">
+                            <input type="radio" id="practice" name="gameMode" value="practice" checked>
+                            <label for="practice">Gyakorló</label><br>
+                            <input type="radio" id="competition" name="gameMode" value="competition">
+                            <label for="competition">Verseny</label><br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p>Kérlek Válaszd ki a játék nehézségi szintjét:</p>
+
+                        <div class="col-sm-12" id="gameLevels">
+                            <input type="radio" id="beginner" name="gameLevel" value="beginner" checked>
+                            <label for="beginner">Kezdő</label><br>
+                            <input type="radio" id="advanced" name="gameLevel" value="advanced">
+                            <label for="advanced">Haladó</label><br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row">
+                            <h2>Bonus segítség</h2>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="isSetCheckbox" name="isSetCheckbox">
+
+                            <label for="isSetCheckbox">Használja a Megjelenítés beállítva gombot?</label><br>
+
+                            <input type="checkbox" id="isWhereSetCheckbox" name="isWhereSetCheckbox">
+
+                            <label for="isWhereSetCheckbox">Szeretné használni azt a gombot amely megmutatja hogy hol vannak a set-ek?</label><br>
+
+                            <input type="checkbox" id="isAutoSupplementCheckbox" name="isAutoSupplementCheckbox">
+
+                            <label for="isAutoSupplementCheckbox">Szeretné használni az automatikus kiegészítést?</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary" onclick="start()">Start</button>
+                    </div>
+                    
+                </section>
+
+
+    
+
+            </main>
+        </body>     
+</html>
